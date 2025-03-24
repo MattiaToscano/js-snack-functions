@@ -7,9 +7,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 function filtraIniziali(array, Iniziale) {
     return array.filter((element) => element[0] === Iniziale);
 }
-
-
 // Invoca la funzione qui e stampa il risultato in console
+filtraIniziali(names, "A");
+console.log(filtraIniziali(names, "A"))
 
 
 
