@@ -5,6 +5,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function Iniziali (array){
+    const iniziali = array.map((name) => name[0]);
+    return iniziali;
+}
+
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
