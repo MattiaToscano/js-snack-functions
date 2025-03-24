@@ -5,7 +5,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 function filtraIniziali(array, Iniziale) {
-    return array.filter((element) => element[0] === Iniziale);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].charAt(0) !== Iniziale) {
+            array.splice(i, 1);
+            i--;
+        }
+    }
+    return array;
 }
 // Invoca la funzione qui e stampa il risultato in console
 filtraIniziali(names, "A");
